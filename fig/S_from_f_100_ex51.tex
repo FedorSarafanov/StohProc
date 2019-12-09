@@ -35,7 +35,7 @@
 		    \begin{axis}[
 			grid=both,
 			scale=1,
-			height=8.23cm,
+			height=5.45cm,
 			width=10cm,
 			% xmode=log,
 			grid style={line width=.0pt, draw=gray!10},
@@ -56,9 +56,9 @@
 		    major grid style={line width=.0pt,draw=black!90},
 		    minor y tick num=4,
 		    minor x tick num=4,
-		    xmin = 0,
+	    	xmin = 0,
 		    ymin = 0,
-		    ymax = 27100,
+		    ymax = 15000,
 		    xmax = 0.12,
 		    % minor x tick num=4,   
 			% xmode=log,
@@ -120,8 +120,8 @@
 	      % \addplot+[scatter,only marks,
              % domain=0:8,samples=100]
             % {exp(x)};
-		\node[above right,inner sep=-1pt] (russell) at (rel axis cs:0,0)
-    {\includegraphics[width=8.48cm,height=6.66cm]{out/51_n32.png}};
+		\node[above right,inner sep=-0.5pt] (russell) at (rel axis cs:0,0)
+    {\includegraphics[trim={0 0 0 8.2cm},clip,width=8.48cm]{out/51_n32.png}};
 		% \addplot +[mark=*, line width=1pt, mark size=1.2pt, solid,draw=lightorange] plot [error bars/.cd, y dir = both, y explicit,x dir = both, x explicit] table [ x=f_Hz, y=U_mV] {../data/steel.tsv};
 		% \addlegendentry{$U_c=10$ В}
 		% \addplot +[mark=*, line width=0.4pt, mark size=0.4pt, solid,violet] plot [error bars/.cd, y dir = both, y explicit,x dir = both, x explicit] table [ x=uz, y=ic, y error=di, x error=du] {../data/ex2.tsv};
